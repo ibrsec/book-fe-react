@@ -23,7 +23,7 @@ const handleEdit = () => {
             {title}
           </h3>
         </div>
-        <div className="img w-full my-3 cursor-pointer transform transition duration-500 hover:scale-105" onClick={()=>navigate("/"+id)}>
+        <div className="img w-full my-5 cursor-pointer transform transition duration-500 hover:scale-105" onClick={()=>navigate("/"+id)}>
           <img
             src={ image ||"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9eztk2gCy55cY8-U1gp8nLCbSj0YV872mw&s"}
             className="mx-auto w-[90%] h-[300px] object-contain"
@@ -46,7 +46,7 @@ const handleEdit = () => {
             <DeleteSvg color="red"  />
           </span>
         </div>
-      </div>
+              </div>
     </div>
   );
 };

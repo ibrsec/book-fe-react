@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import BookCard from "../components/BookCard";
+import React, { useEffect } from "react"; 
 import Spinner from "../components/Spinner";
 import { useParams,useNavigate } from "react-router-dom";
 import useBookApis from "../services/useBookApis";
 import { useSelector } from "react-redux";
+import BookDetailCard from "../components/BookDetailCard";
 
 const BookDetail = () => {
   const { id } = useParams();
@@ -23,7 +23,7 @@ console.log('loading=',loading)
           
           loading ? <Spinner />
           :
-      <BookCard {...oneBook} />
+      <BookDetailCard {...oneBook} />
      }
     </div>
   );
